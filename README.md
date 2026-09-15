@@ -1,92 +1,71 @@
 ```text
-┌─────────────────────────────────────────────────────────────────────┐
-│  ARGOTADEV@GITHUB                                                   │
-├─────────────────────────────────────────────────────────────────────┤
-│                                                                     │
-│  ROLE       Data Scientist · AI Engineer · MLOps                    │
-│  DOMAIN     NLP · RAG · Scientific Computing ·                      │
-│  SYSTEM     Linux · CUDA · Slurm                                    │
-│  LANG       Python · Bash · SQL · Node.js                           │
-│  FOCUS      Production AI · Infrastructure · Automation             │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
-
+┌──────────────────────────────────────────────────────────────┐
+│  argotadev@github                                             │
+├──────────────────────────────────────────────────────────────┤
+│                                                                │
+│  role      Data Scientist · AI Engineer · MLOps               │
+│  domain    NLP · RAG · Scientific Computing                   │
+│  stack     Python · PyTorch · FastAPI · Docker                │
+│  infra     Linux · Slurm · CUDA · Ansible · Grafana           │
+│  location  Corrientes, Argentina                              │
+│                                                                │
+└──────────────────────────────────────────────────────────────┘
 ```
+
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/argotadevargota/)
 [![Email](https://img.shields.io/badge/Email-Contact_Me-red?style=for-the-badge&logo=gmail)](mailto:argotadevargota@email.com)
 
+</div>
 
 ```text
-$ ssh argotadev@github
-Last login: Sun Aug 16 23:06:34 2026 from 127.0.0.1
+$ whoami
+```
 
-argotadev@github:~$ cat /etc/profile
+Trabajo en el cruce entre NLP/RAG y la infraestructura que los pone en
+producción: desde entrenar y servir modelos hasta el HPC (Slurm, CUDA)
+y las pipelines de datos que los alimentan. Actualmente en Corrientes,
+Argentina, metido en proyectos judiciales y agrometeorológicos donde
+el dato es sensible o el volumen es grande.
 
-ROLE="Data Scientist / AI Engineer"
-SPECIALIZATION="NLP / MLOps / HPC"
-ENVIRONMENT="Linux / GPU / Distributed Systems"
-LOCATION="Corrientes, Argentina"
-EDITOR="emacs -nw"
-PLANNER="org-mode"
+```text
+$ cat proyectos/jeia.md
+```
 
-argotadev@github:~$ uptime
-Data → Models → Infrastructure → Production
+**JEIA** — NLP judicial: anonimización y RAG
 
-                        ┌──────────────────────────┐
-                        │       AI / DATA          │
-                        │                          │
-                        │  NLP · NER · RAG · ML    │
-                        │  PyTorch                 │
-                        └────────────┬─────────────┘
-                                     │
-                                     ▼
-                        ┌──────────────────────────┐
-                        │         MLOps            │
-                        │                          │
-                        │  APIs · Pipelines        │
-                        │  Docker · Podman         | 
-                        |  Ansible · Grafana       │
-                        └────────────┬─────────────┘
-                                     │
-                                     ▼
-                        ┌──────────────────────────┐
-                        │     INFRASTRUCTURE       │
-                        │                          │
-                        │ Linux · Slurm · CUDA     │
-                        │ HPC · Apache             |
-                        └──────────────────────────┘
+Pipeline de anonimización de expedientes judiciales: NER → detección
+de entidades sensibles → anonimización → indexado para retrieval.
+Pensado para correr sobre documentos reales, no datasets de juguete.
 
+`Python` `GLiNER2` `Qwen` `Transformers`
 
-argotadev@github:~$ cat proyectos 
+```text
+$ cat proyectos/soana.md
+```
 
-┌─ JEIA ─────────────────────────────────────────────────────┐
-│ Judicial NLP & Anonimización & RAG                         │
-│                                                            │
-│ NER → Detección de entidades → Anonymization → Retrieval   │
-│                                                            │
-│ Python · GLiNER2 · Qwen · Transformers                     │
-└────────────────────────────────────────────────────────────┘
+**SOANA** — Sistema Observacional Agrometeorológico del NEA
 
-┌─ SOANA ────────────────────────────────────────────────────┐
-│ Sistema Observacional Agrometeorológico del NEA            │
-│                                                            │
-│ Ingesta, procesamiento y visualización de datos            │
-│                                                            │
-│ APIs → Datos científicos → Procesamiento → Dashboard       │
-│                                                            │
-│ Python · FastAPI · Data Pipelines · Linux · Apache         │
-└────────────────────────────────────────────────────────────┘
+Ingesta, procesamiento y visualización de datos de estaciones
+agrometeorológicas: APIs de captura → limpieza y validación →
+dashboards para toma de decisiones en el sector agropecuario del NEA.
 
-┌─ CECONEA (HPC) ────────────────────────────────────────────┐
-│ Centro de Computo de Alto Desempeño de NEA                 │
-│                                                            │
-│ Linux → Slurm → CUDA → Networking                          │
-│                                                            │
-│ Bash · Ansible · Grafana · Prometheus · Loki               │
-└────────────────────────────────────────────────────────────┘
+`Python` `FastAPI` `Data Pipelines` `Apache`
 
-argotadev@github:~$ logout
+```text
+$ cat proyectos/ceconea.md
+```
+
+**CECONEA** — Centro de Cómputo de Alto Desempeño del NEA
+
+Administración de la infraestructura HPC: nodos Linux, colas Slurm,
+GPUs CUDA y el stack de observabilidad (Grafana, Prometheus, Loki)
+que mantiene visible el estado del cluster.
+
+`Bash` `Ansible` `Grafana` `Prometheus` `Loki`
+
+```text
+$ logout
 Connection to github closed.
 ```
