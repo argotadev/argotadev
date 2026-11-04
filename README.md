@@ -1,14 +1,14 @@
 ```text
 ┌──────────────────────────────────────────────────────────────┐
-│  argotadev@github                                             │
+│  argotadev@github                                            │
 ├──────────────────────────────────────────────────────────────┤
-│                                                                │
-│  role      Data Scientist · AI Engineer · MLOps               │
-│  domain    NLP · RAG · Scientific Computing                   │
-│  stack     Python · PyTorch · FastAPI · Docker                │
-│  infra     Linux · Slurm · CUDA · Ansible · Grafana           │
-│  location  Corrientes, Argentina                              │
-│                                                                │
+│                                                              │
+│  role      Data Scientist · AI Engineer · MLOps              │
+│  domain    NLP · RAG · Scientific Computing                  │
+│  stack     Python · PyTorch · FastAPI · Docker               │
+│  infra     Linux · Slurm · CUDA · Ansible · Grafana          │
+│  location  Corrientes, Argentina                             │
+│                                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
 
